@@ -6,8 +6,8 @@ import java.util.LinkedList;
 public class Main {
     private static void filtr(Collection<Employer> c) {
         for(int i = 0; i < c.size(); i++) {
-            Employer emp = new Employer(c.);//ERROR
-            if(emp.getSalary() <= 4000) System.out.println(emp);
+            Employer emp = c.get(i);
+            if(c.get(i).getSalary() <= 4000) System.out.println(c.get(i));
         }
     }
 
